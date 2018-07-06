@@ -1,9 +1,13 @@
 # Add  code here!
 
 def prime?(number)
-  if number == 0
+  array_range = []
+  if number == 0 || number == -1
     return false
-    array_range = (2...number).to_a
+  elsif number > 0
+    array_range = (2...number)
+  else
+    array_range = (number+1...-2)
   
   array_range.each do |divisor|
     if number % divisor == 0
