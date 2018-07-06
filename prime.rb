@@ -1,5 +1,9 @@
 # Add  code here!
 
 def prime?(number)
-  range = [2..49]
+  array_range = (2...number).to_a
+  
+  array_range.each do |divisor|
+    if number/divisor 
+  end
 end
