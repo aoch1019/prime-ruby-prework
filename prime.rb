@@ -2,10 +2,10 @@
 
 def prime?(number)
   array_range = []
-  if number <= 0
+  if number <= 1
     return false
   else
-    array_range = (2...number/2)
+    array_range = (2...number)
   
   array_range.each do |divisor|
     if number % divisor == 0
