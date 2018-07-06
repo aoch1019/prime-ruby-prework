@@ -6,6 +6,7 @@ def prime?(number)
   array_range.each do |divisor|
     if number % divisor == 0
       return false
+    end
   end
   return true
 end
